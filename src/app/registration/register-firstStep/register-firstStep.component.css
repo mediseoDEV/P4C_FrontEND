@@ -1,0 +1,7 @@
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.card:hover .card-body {
+  background-color: #f8f9fa; /* Change background color of card body on hover */
+}
