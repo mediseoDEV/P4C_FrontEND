@@ -1,23 +1,17 @@
 import { Component } from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
-import {Router, RouterLink} from "@angular/router";
+import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-header', // Adjust the selector if necessary
+  templateUrl: './header.component.html',
   standalone: true,
   imports: [
     NgOptimizedImage,
     RouterLink
   ],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
-  constructor(private router: Router) { }
-
-  navigateToRegistration() {
-    this.router.navigate(['/register']);
-  }
-
+  // Component logic if needed
 }

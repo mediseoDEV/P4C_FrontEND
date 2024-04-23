@@ -1,10 +1,5 @@
-
-
-<!-- Use the layout component without header and footer -->
-<app-layout-without-header-footer>
-  <!-- The router will render components without header/footer content here -->
-</app-layout-without-header-footer>
-<!-- Use the layout component with header and footer -->
-<app-layout-with-header-footer>
-  <!-- The router will render components with header/footer content here -->
-</app-layout-with-header-footer>
+<app-header *ngIf="showHeader"></app-header>
+<ng-container>
+  <router-outlet></router-outlet>
+</ng-container>
+<app-footer *ngIf="showFooter"></app-footer>
